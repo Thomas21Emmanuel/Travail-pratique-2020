@@ -1,0 +1,14 @@
+.image {
+    display: flex;
+    flex-direction: row;
+    align-items: left;
+
+}
+
+#activite p {
+    color: aliceblue;
+}
+
+.deux-colonnes img {
+    border: 2px solid navy;
+}

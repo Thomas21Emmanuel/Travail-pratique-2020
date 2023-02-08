@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta author="Emmanuel Thomas">
+    <!--<meta name="robots" content="noindex">
+    <meta name="description" content="Cette page web parle de l'Hiver et des diverses activité hivernales."> -->
+    <title>L'hiver</title>
+    <link rel="stylesheet" href="css/normalize.css"> <!-- Toujours en première position   -->
+    <link rel="stylesheet" href="css/inscription.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/article.css">
+    <link rel="stylesheet" href="css/tableau.css">
+    <link rel="stylesheet" href="css/galerie.css">
+    <link rel="stylesheet" href="css/video.css">
+    <script src="https://kit.fontawesome.com/93d946c9f6.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <nav>
+
+
+        <a href="#accueil">Accueil</a>
+        <a href="#inscription">Inscription</a>
+        <a href="#activite">Activités</a>
+        <a href="#galerie">Galerie</a>
+        <a href="#video">Video</a>
+    </nav>
+    <!--  /////////////////////////////////////////////////  Accueil  -->
+    <section id="accueil" class='global'>
+        <h1 class='titre'>Hiver</h1>
+        <img src="images/joy-real-535919-unsplash-1600x0-c-default.jpg" style="width:500px;height:300px;">
+        <h2 class='sous-titre'>La saison froide</h2>
+        <p class='description'>Par Emmanuel Thomas pour le cours de Mise en page web du Département d'Intégration Multimédia</p>
+        <p class='description'>Date: 1er Décembre 2020</p>
+        <p class='description'>L'hiver est la période la plus froide de l'année, souvent charactérisé par d'énorme tombées de neige. Malgré cela, l'hiver offre une multidude d'opportunités pour des activités uniques et amusantes.</p>
+        
+        console.log(description, author);
+        
+    </section>
+    <!--  /////////////////////////////////////////////////  Inscription  -->
+    <section id="inscription" class='global'>
+
+        <h2 class='sous-titre'>Inscription</h2>
+        <form action="" class='inscription'>
+
+            <p class='description'>Veuillez tout d'abord vous inscrire afin de regarder les différentes activités qui s'offre à vous.</p>
+            <fieldset>
+                <legend>Profil</legend>
+                <p>
+                    <label for="nom">Nom</label>
+                    <input type="text" name="nom" id="nom">
+                </p>
+                <p>
+                    <label for="prenom">Prénom</label>
+                    <input type="text" name="prenom" id="prenom">
+                </p>
+                <p>
+                    <label for="courriel">Courriel</label>
+                    <input type="text" name="courriel" id="courriel">
+                </p>
+
+                <label for="continent">Dans quel continent residez-vous?</label>
+
+                <select name="pets" id="pet-select">
+                    <option value="">----</option>
+                    <option value="ameriquenord">Amérique du Nord</option>
+                    <option value="ameriquecentrale">Amérique Centrale</option>
+                    <option value="ameriquesud">Amérique du Sud</option>
+                    <option value="afrique">Afrique</option>
+                    <option value="asie">Asie</option>
+                    <option value="europe">Europe</option>
+                    <option value="oceanie">Océanie</option>
+                </select>
+
+
+                <p>Êtes-vous habitué à faire des activités hivernales?</p>
+                <label class="container">Oui
+                    <input type="checkbox" checked="checked">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="container">Non
+                    <input type="checkbox" checked="checked">
+                    <span class="checkmark"></span>
+                </label>
+
+
+
+                <p>Souhaitez-vous recevoir notre infolettre par courriel?</p>
+                <input type="radio" id="oui" name="reponse" value="oui">
+                <label for="oui">Oui</label><br>
+                <input type="radio" id="non" name="reponse" value="non">
+                <label for="non">Non</label><br>
+            </fieldset>
+            <div>
+                <input type="submit" value="Transmettre">
+                <button type="button" onclick="alert('À une prochaine fois')">Initialise</button>
+            </div>
+
+        </form>
+
+    </section>
+
+
+    <!--  /////////////////////////////////////////////////  Activités  -->
+    <section id="activite" class='global'>
+        <h2 class='sous-titre'>Activités</h2>
+
+
+        <p>Ci dessous est un tableau regroupant quelques activités hivernales, et une estimation des frais pour chaque.</p>
+        <article class='deux-colonnes'>
+            <figure>
+                <img src="images/activites.png">
+                <figcaption>Illustration d'activité</figcaption>
+            </figure>
+            <table class='tableau'>
+
+                <!-- <img class='image' src="images/activit%C3%A9s.png" style="width:300px;height:300px";> -->
+                <caption>Les activités hivernales</caption>
+                <tr>
+
+                    <th>Activité</th>
+                    <th>Emplacement</th>
+                    <th>Date</th>
+                    <th>Coût</th>
+
+
+                </tr>
+                <tr>
+
+                    <td>Hockey sur glace</td>
+                    <td>Arena sportif</td>
+                    <td class='date'>Du 3 Décembre au 24 Janvier</td>
+                    <td class='prix'>20$</td>
+                </tr>
+                <tr>
+                    <td>Glissade</td>
+                    <td>Parc</td>
+                    <td class='date'>Du 3 Décembre au 2 Janvier</td>
+                    <td class='prix'>Gratuit</td>
+                </tr>
+                <tr>
+                    <td>Ski et Planche à neige</td>
+                    <td>Mont don't-je-ne-sais-le-nom</td>
+                    <td class='date'>Du 3 Décembre au 15 Janvier</td>
+                    <td class='prix'>50$</td>
+                </tr>
+                <tr>
+                    <td>Création de château de neige</td>
+                    <td>Parc</td>
+                    <td class='date'>Du 3 Décembre au 4 Janvier</td>
+                    <td class='prix'>Gratuit</td>
+                </tr>
+
+            </table>
+        </article>
+    </section>
+    <!--  /////////////////////////////////////////////////  Galerie  -->
+    <section id="galerie" class='global'>
+        <h2 class='sous-titre'>Galerie</h2>
+        <article class='image'>
+            <figure>
+                <img class='image' src="images/58293.jpg" style="width:300px;height:300px;">
+                <figcaption>Randonnée en montagne</figcaption>
+            </figure>
+            <figure>
+                <img class='image' src="images/outdoor-hockey.jpg" style="width:300px;height:300px;">
+                <figcaption>Hockey extérieur</figcaption>
+            </figure>
+
+            <figure>
+                <img class='image' src="images/Snowboarding_and_Skiing,_Featured_Image.jpg" style="width:300px;height:300px" ;>
+                <figcaption>Skii et Planche à neige</figcaption>
+            </figure>
+
+            <figure>
+                <img class='image' src="images/henry_lavoie_photo.jpg" style="width:300px;height:300px;">
+                <figcaption>Chateau de neige</figcaption>
+            </figure>
+
+            <!--<figure>
+             <img class='image2' src="images/winter-outdoor-activities-for-toddlers-canadian-nanny-blog.jpg" style="width:300px;height:300px";>
+            <figcaption>Tobogan</figcaption>
+             </figure> -->
+
+
+        </article>
+    </section>
+
+    <!--  /////////////////////////////////////////////////  Video  -->
+    <section id="video" class='global'>
+        <h2 class='sous-titre'>Vidéos</h2>
+
+        <iframe class='video' width="560" height="315" src="https://www.youtube.com/embed/1TJ08caetkw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+        <iframe class='video' width="560" height="315" src="https://www.youtube.com/embed/RRe3g8-tEr4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+        <iframe class='video' width="560" height="315" src="https://www.youtube.com/embed/EsPMpFKvZIA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    </section>
+
+
+
+</body>
+<script>
+    let elmNav = document.querySelectorAll('#menu a')
+    for (let elmA of elmNav) {
+        elmA.addEventListener('click', function() {
+            initLienMenu()
+            // console.log(this.firstChild.nextSibling.checked)
+            this.classList.toggle('lienSelectionne')
+        })
+    }
+
+    function initLienMenu() {
+        for (let elmA of elmNav) {
+            elmA.classList.remove('lienSelectionne')
+        }
+    }
+
+</script>
+
+</html>

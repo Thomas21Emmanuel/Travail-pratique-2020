@@ -1,0 +1,163 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    overflow-x: hidden;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: white;
+    padding: 10px;
+
+}
+
+nav a {
+    display: inline-block;
+    padding: 5px;
+    color: steelblue;
+    font-size: 1.5em;
+    text-decoration: none;
+
+}
+
+nav a:hover {
+    background-color: cornflowerblue;
+    border-bottom: 1px dotted #fff;
+}
+
+h1 {
+    font-size: 4em;
+}
+
+h2 {
+    font-size: 3.5em;
+    background-color: white;
+    box-shadow: 3px 3px 10px 3px grey;
+}
+
+h3 {
+    font-size: 2em;
+}
+
+h4 {
+    font-size: 1.5em;
+}
+
+p {
+    text-align: justify;
+}
+
+.titre {
+    color: lightskyblue;
+    background-color: snow;
+    box-shadow: 3px 3px 10px 3px lightblue;
+}
+
+#accueil img {
+    border: 2px solid lightblue;
+}
+
+.sous-titre {
+    color: cornflowerblue;
+}
+
+.description {
+    color: white;
+}
+
+img {
+    /*
+            type display
+                inline 
+                block
+                inline-block
+                flexbox
+            */
+
+
+    display: block;
+}
+
+
+.global {
+    width: 100vw;
+    /* 100% de la largeur de fenêtre de navigateur peut importe le périphérique */
+    height: 100vh;
+    /* 100% de la hauteur */
+    display: flex;
+    flex-direction: column;
+    /* définir l'axe principale vertical */
+    justify-content: space-around;
+    /* positionnement sur l'axe principal */
+    align-items: center;
+    /* positionnement sur l'axe secondaire */
+
+}
+
+#accueil {
+    background-color: #354964;
+
+
+}
+
+
+#inscription {
+    background-color: #2F567D;
+}
+
+#activite {
+    background-color: #2F629B;
+}
+
+#galerie {
+    background-color: #3979BF;
+}
+
+#video {
+    background-color: #4283C7;
+}
+
+#menu a.lienSelectionne {
+    background-color: #0f0;
+    color: #000;
+}
+
+
+
+.deux-colonnes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.deux-colonnes figure {
+    width: 25%;
+    margin-right: 5%;
+}
+
+.deux-colonnes figure img {
+    width: 100%;
+    display: block;
+}
+
+.deux-colonnes figcaption {
+    color: white;
+}
+
+.image img {
+    flex-direction: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: left;
+
+}
+
+.activite p {
+    color: red;
+}

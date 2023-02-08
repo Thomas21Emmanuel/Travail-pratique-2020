@@ -1,0 +1,21 @@
+#galerie figcaption {
+    color: snow;
+}
+
+.image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image figure img{
+   border: 2px solid navy;
+}
+
+.image figure:nth-of-type(odd){
+    transform:rotate(-20deg) translateY(-30px);
+}
+
+.image figure:nth-of-type(even){
+    transform:rotate(+20deg) translateY(+30px);
+}

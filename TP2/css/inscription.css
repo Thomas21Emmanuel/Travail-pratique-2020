@@ -1,0 +1,13 @@
+.nom input {
+    padding: 100%;
+}
+
+.inscription p,
+legend,
+label {
+    color: snow;
+}
+
+.inscription fieldset {
+    border: 2px solid lightblue;
+}
